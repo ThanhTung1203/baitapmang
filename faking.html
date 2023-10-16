@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+    body {
+        text-align: center;
+    }
+
+
+</style>
+<body>
+<script></script>
+
+<h1> Viết gì đê em ơi </h1>
+<textarea cols="50" ; rows="20" id="inp" onkeypress="typing()"></textarea>
+<script>
+    let str = ' EM LÀ CON ĐẦN  ' ;
+    let tx = document.getElementById('inp')
+    let index = 0;
+    let res = '';
+
+    function typing() {
+        res += str[index];
+        index++
+        if (index > str.length) {
+            res = '';
+            index = 0;
+
+        }
+        tx.value = res;
+        tx.value = tx.value.slice(0, tx.value.length +2);
+
+
+     }
+</script>
+</body>
+</html>

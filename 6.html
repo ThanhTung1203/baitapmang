@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let b = [1, 2, 3, 4, 5]
+
+    let v = prompt(' nhập đê')
+    let check = false
+    for (let i = 0; i < b.length; i++) {
+        if (v == b[i]) {
+            check = true
+            break;
+        } else {
+            check = false;
+        }
+    }if (check) {
+        alert(v + ' is in the array')
+    } else {
+        alert(v + ' is not in the array')
+    }
+</script>
+
+</body>
+</html>
